@@ -1,0 +1,61 @@
+/* Custom CSS */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #007791; /* Change header background color */
+    color: #fff; /* Change header font color to white */
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-container {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.table th {
+    font-weight: bold;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.total-row {
+    font-weight: bold;
+}
+
+.header, .table-title {
+    background-color: #f2f2f2;
+    color: #007791; /* Change font color to a suitable color */
+    text-align: center;
+    padding: 15px 0;
+}
+
+.table-title {
+    font-size: 24px;
+    font-weight: bold;
+}

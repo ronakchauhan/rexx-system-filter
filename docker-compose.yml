@@ -1,0 +1,27 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    volumes:
+      - .:/var/www/html
+    environment:
+      DB_HOST: db
+      DB_DATABASE: rexx_event
+      DB_USER: rexx
+      DB_PASSWORD: rexx
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: rexx_event
+      MYSQL_USER: rexx
+      MYSQL_PASSWORD: rexx
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+volumes:
+  mysql_data:
